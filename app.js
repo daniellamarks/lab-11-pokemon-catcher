@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { generateThreeRandomPokemon } from './data-utils.js';
-import { capturePokemon } from './local-storage-utils.js'
-import { findByName } from './utils.js';
+import { capturePokemon, getPokedex, encounterPokemon } from './local-storage-utils.js'
+import { findByName, findById } from './utils.js';
 import pokeData from './data.js'
 
 // import { capturePokemon } from './local-storage-utils.js';
@@ -32,13 +32,27 @@ function createDom() {
     input1.value = threePokemonArray[0].pokemon;
     input2.value = threePokemonArray[1].pokemon;
     input3.value = threePokemonArray[2].pokemon;
+    console.log(input3.value)
 
     const pCaught = document.getElementById('number-caught')
     pCaught.textContent = `You've caught ${pokemonCaught++} pokemon!`
 
-    console.log(input1.value, input2.value, input3.value)
+    const pokedex = getPokedex()
+    console.log(pokedex);
+    const matchingPokemon1 = findById(pokedex, input1.value)
+    const matchingPokemon2 = findById(pokedex, input2.value)
+    const matchingPokemon3 = findById(pokedex, input3.value)
 
-}
+    console.log(matchingPokemon1, matchingPokemon2, matchingPokemon3)
+
+    const pEncountered1 = document.querySelector('#pokemon1')
+    pEncountered1.textContent = `Encountered: ${matchingPokemon1.encountered} Captured: ${matchingPokemon1.captured} `
+    const pEncountered2 = document.querySelector('#pokemon2')
+    pEncountered2.textContent = `Encountered: ${matchingPokemon2.encountered} Captured: ${matchingPokemon2.captured} `
+    const pEncountered3 = document.querySelector('#pokemon3')
+    pEncountered3.textContent = `Encountered: ${matchingPokemon3.encountered} Captured: ${matchingPokemon3.captured} `
+
+ }
 
 createDom();
 

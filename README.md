@@ -48,3 +48,7 @@ Pokedex Plan
             incrememnt if not in existence, 
             reset local storage, 
     2. generate 3 new pokemon
+
+
+Stretch: Use an array of arrays (that is, an array of session arrays) in local storage to track and display all-time encounters and captures (over multiple sessions) in addition to single session. Display these according to a design of your choice.
+STRETCH: Add the session to an array of all sessions stored in local storage. This can be used to report on all-time results. This will be an array of arrays.
