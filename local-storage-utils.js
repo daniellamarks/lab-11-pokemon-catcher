@@ -43,21 +43,12 @@ export function encounterPokemon(pokemonObject) {
     setPokedex(pokedexArray);
 }
 
-
-
-
-
-
-
-
-
 export function capturePokemon(pokemonObject) {
 
     const pokedexArray = getPokedex();
 
     const matchingPokemon = findById(pokedexArray, pokemonObject.pokemon);
 
-   
     matchingPokemon.captured++;
     // if (matchingPokemon) {
     //     matchingPokemon.captured++;

@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 
 import { generateThreeRandomPokemon } from './data-utils.js';
+import { capturePokemon } from './local-storage-utils.js'
 import { findByName } from './utils.js';
 
 // import { capturePokemon } from './local-storage-utils.js';
@@ -31,13 +32,28 @@ function createDom() {
     img2.src = threePokemonArray[1].url_image
     img3.src = threePokemonArray[2].url_image
 
+    input1.name = threePokemonArray[0].pokemon;
+    input2.name = threePokemonArray[1].pokemon;
+    input3.name = threePokemonArray[2].pokemon;
+
+    console.log(input1.name, input2.name, input3.name)
+
 }
 
 createDom()
 
-button.addEventListener('click' () => {
+button.addEventListener('click', () => {
 
-    
+   // grab selected pokemon    
+    const selected = document.querySelector('input:checked')
+    //add selected pokemon to pokedex captured
+
+    console.log(selected)
+    //  = capturePokemon(selected.value)
+
+    // replace with three new pokemon
+
+
 })
 
 
