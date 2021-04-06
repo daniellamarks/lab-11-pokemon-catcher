@@ -27,7 +27,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -40,8 +39,6 @@ section {
     align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
 }
 
@@ -136,4 +133,8 @@ footer {
 
   th {
       margin: 1rem;
+  }
+
+  button {
+      margin-top: -1rem;
   }

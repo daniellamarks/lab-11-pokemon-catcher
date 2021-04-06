@@ -20,3 +20,8 @@ export function createTableRow(pokedexArrayItem) {
     return tr;
 
 }
+
+export function clearGame() {
+    const clearedStorage = localStorage.clear(); 
+    return clearedStorage
+}
