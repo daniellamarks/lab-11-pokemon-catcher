@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <title>Results</title>
 </head>
 
@@ -17,6 +18,14 @@
   
     </header>
     <main>
+        <section class="bar-graph">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </section>
+
+        <div class="button-wrap">
+            <button id="clear-button" class="clear-button">Start New Game</button>
+        </div>
+
         <section class="main-section">
             <table class="pokemon-table">
                 <h2>Pokemon Summary</h2>
@@ -25,12 +34,10 @@
                     <th># Captured</th>
                     <th># Encountered</th>
                 </thead>
-            
             </table>
         </section>
-        <div class="button-wrap">
-            <button id="clear-button" class="clear-button">Start New Game</button>
-        </div>
+        
+   
         <!-- <a href="../index.html">Back to game</a> -->
 
     </main>

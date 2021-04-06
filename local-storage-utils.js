@@ -12,15 +12,15 @@ export function getPokedex() {
     } else return [];
 }
 
-//if (!pokedexString) return [];
-    // const pokedexParsed = JSON.parse(pokedexString);
-    // return parsedPokedex;
-
 export function setPokedex(pokedexArray) {
     const pokedexString = JSON.stringify(pokedexArray);
     localStorage.setItem(POKEDEX, pokedexString);
 }
 
+// export function setPokedexArray(pokedexSession) {
+//     const pokedexString = JSON.stringify(pokedexArray);
+//     localStorage.setItem('ARRAYOFSESSIONS', pokedexString);
+// }
 
 //add pokemon to array in local storage or increments encounters
 export function encounterPokemon(pokemonObject) {
