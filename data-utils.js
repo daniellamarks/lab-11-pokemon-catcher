@@ -1,12 +1,9 @@
 import pokeData from './data.js';
 import { encounterPokemon } from './local-storage-utils.js';
 
-function getRandomIndex(){
-    console.log(Math.floor(Math.random() * pokeData.length));
+function getRandomIndex() {
     return Math.floor(Math.random() * pokeData.length);
 }
-
-console.log(getRandomIndex());
 
 export function generateThreeRandomPokemon() {
 
@@ -14,7 +11,7 @@ export function generateThreeRandomPokemon() {
     let random2 = getRandomIndex();
     let random3 = getRandomIndex();
 
-    console.log(random1, random2, random3);
+    // console.log(random1, random2, random3);
     
     while (random1 === random2 
         || random2 === random3
