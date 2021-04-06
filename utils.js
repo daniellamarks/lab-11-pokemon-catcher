@@ -1,4 +1,4 @@
-import pokeData from './data.js';
+// import pokeData from './data.js';
 
 
 export function findById(array, id) {
@@ -8,10 +8,10 @@ export function findById(array, id) {
     }
 }
 
-export function findByName(name) {
-    for (let pokeObject of pokeData) {
+export function findByName(pokeDataArray, name) {
+    for (let pokeObject of pokeDataArray) {
         if (pokeObject.pokemon === name)
-            return pokeObject.pokemon;
+            return pokeObject;
     }
 }
 
