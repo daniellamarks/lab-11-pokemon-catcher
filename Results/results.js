@@ -1,5 +1,5 @@
-import { getPokedex } from '../local-storage-utils.js'
-import { createTableRow, clearGame } from './utils-results.js'
+import { getPokedex, clearGame } from '../local-storage-utils.js'
+import { createTableRow } from './utils-results.js'
 
 const table = document.querySelector('.pokemon-table');
 const pokedex = getPokedex()

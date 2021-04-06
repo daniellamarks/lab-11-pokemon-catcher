@@ -1,5 +1,6 @@
 
 
+
 export function createTableRow(pokedexArrayItem) {
 
     const tr = document.createElement('tr');
@@ -21,7 +22,3 @@ export function createTableRow(pokedexArrayItem) {
 
 }
 
-export function clearGame() {
-    const clearedStorage = localStorage.clear(); 
-    return clearedStorage
-}
