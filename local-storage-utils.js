@@ -50,9 +50,6 @@ export function capturePokemon(pokemonObject) {
     const matchingPokemon = findById(pokedexArray, pokemonObject.pokemon);
 
     matchingPokemon.captured++;
-    // if (matchingPokemon) {
-    //     matchingPokemon.captured++;
-    // }
 
     setPokedex(pokedexArray);
 

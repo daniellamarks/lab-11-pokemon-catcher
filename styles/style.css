@@ -115,3 +115,25 @@ footer {
   img {
       height: 150px;
   }
+
+  .td {
+      text-align: right;
+  }
+
+  .tr {
+      border-bottom: 1px solid gray;
+  }
+
+  table {
+      border: 1px solid gray;
+      padding: 2em;
+      border-radius: 15%;
+  }
+
+  thead {
+    font-size: 1.5rem;
+  }
+
+  th {
+      margin: 1rem;
+  }
