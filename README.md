@@ -7,3 +7,44 @@
 5) Is there some state we need to initialize?
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 7) Think about how to validate each of your steps
+
+
+Pokedex Plan
+
+1. HTML
+    - need Radio buttons
+        -labels > inputs, imgages.
+        -labels all have to be DIFFERENT IDs,
+        -input names all have to be the same
+        -input types all Radios
+        -input images all have to be id'd differently
+
+    - need catch button
+
+2. Copy and paste data.js page with array of pokemon objects
+
+3. We have two changing states: 
+    1. The 3 pokemon generated on the DOM
+        -encounters start onload
+    2. Capturing the pokemon with the button
+        -captures start at 0 (let captures = 0)
+
+4. First I need to set up local storage to have a starting state for the page with three random pokemon
+    - Create functions 
+        1. get 3 pokemon function 
+            1. needs pokedata to draw from
+            2. needs function to generate encountered pokemon. Encounteredpokemon function needs
+                1.  to get pokedex
+                    - need findbyid
+                2. set pokedex
+                    - need findbyid
+
+5. I need to make the capture button take the selected pokemon and 
+    1. add the captured selected pokemon to the captured local storage quantity (increment captured)
+        1. match the selected with pokedata using name
+        2. capture pokemon (store to local storage)
+            getpokedex to see what's in local storage, 
+            input match to compare to local storage, 
+            incrememnt if not in existence, 
+            reset local storage, 
+    2. generate 3 new pokemon
