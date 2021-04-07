@@ -72,7 +72,6 @@ button.addEventListener('click', () => {
     } else {
         window.location = './results/results.html';
     }
-
 })
 
 
