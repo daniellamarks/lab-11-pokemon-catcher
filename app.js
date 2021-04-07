@@ -70,7 +70,7 @@ button.addEventListener('click', () => {
     if (pokemonCaught < 10) {// replace with three new pokemon???
     createDom()
     } else {
-        window.location = './results/results.html';
+        window.location = './Results/results.html';
     }
 })
 
